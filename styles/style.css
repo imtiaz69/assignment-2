@@ -592,7 +592,7 @@ th{
         margin-left: 5%;
     }
 .container{
-    padding: 30px;
+    padding: 20px;
 }
     .content{
         flex-direction: column;
@@ -603,9 +603,12 @@ th{
         width: 80%;
         /* margin-right: 40px; */
     }
-    .input-fields{
+    /* .input-fields{
         width: 100%;
-    }
+    } */
+     .input-fields{
+        width: 80%;
+     }
     .team-image-container{
         display: flex;
         flex-direction: column;
