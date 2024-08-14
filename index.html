@@ -26,8 +26,12 @@
             <div class="banner-description">
                 <h2 class="banner-title">Get body in <span class="miama-normal">shape</span> & stay healthy</h2>
                 <p class="title-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <button class="primary-btn">Join Club Now!</button>
+                <div class="btn">
+                    <button class="primary-btn">Join Club Now!</button>
                 <button class="transparent-btn">Download App</button>
+
+                </div>
+                
             </div>
             <div class="banner-image">
                 <div class="image"><img src="images/Images 2.png" alt=""></div>
@@ -87,7 +91,7 @@
                 <button class="primary-btn">Join Now</button>
             </div>
             <div class="run-image">
-                <!--<img src="images/run.jpg" alt="">-->
+                
             </div>
         </section>
 
@@ -105,8 +109,8 @@
             <div class="container">
                 <div class="content">
                     <div class="bmi-chart">
-                        <h3 class="title">BMI Calculator Chart</h3>
-                        <table border="1" >
+                        <h3 class="title2">BMI Calculator Chart</h3>
+                        <table >
                             <tr>
                                 <th>BMI</th>
                                 <th>Weight Status</th>
@@ -130,10 +134,20 @@
                         </table>
                     </div>
                     <div class="calculator">
-                        <h3 class="title">Calculate Your BMI</h3>
+                        <h3 class="title2">Calculate Your BMI</h3>
                         <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym</p>
                         <div class="input-fields">
-
+                            <input type="text" placeholder="Height/cm" class="height input-box">
+                            <input type="text" placeholder="Weight/Kg" class="weight input-box">
+                            <input type="text" placeholder="Age" class="age input-box">
+                            <select name="Sex" class="Sex input-box" aria-placeholder="Se " id="">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <select class="activity input-box" name="Select an activity factor" id="">
+                                <option value="sports">Sports</option>
+                                <option value="gym">Gym</option>
+                            </select>
                         </div>
                         <button class="primary-btn">Calculate</button>
                     </div>
@@ -145,34 +159,34 @@
         <section class="team">
             <div class="team-text">
                 <h3 class="title">Meet Our team</h3>
-                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym</p>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym</p>  
+            </div>
                 <div class="team-image-container">
                     <div class="image-box-1 box">
-                        <h5></h5>
-                        <p><span class="trainer-name">Jerome Bell</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;" ><span class="trainer-name">Jerome Bell</span> <br><span class="description">Trainer</span></p>
                     </div>
                     <div class="image-box-2 box">
-                        <p><span class="trainer-name">Cameron Willi</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;"><span class="trainer-name">Cameron Willi</span> <br><span class="description">Trainer</span></p>
                     </div>
                     <div class="image-box-3 box">
-                        <p><span class="trainer-name">Darell Steward</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;"><span class="trainer-name">Darell Steward</span> <br><span class="description">Trainer</span></p>
                     </div>
                     <div class="image-box-4 box">
-                        <p><span class="trainer-name">Dianne Russel</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;"><span class="trainer-name">Dianne Russel</span> <br><span class="description">Trainer</span></p>
                     </div>
                     <div class="image-box-5 box">
-                        <p><span class="trainer-name">Cody Fisher</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;"><span class="trainer-name">Cody Fisher</span> <br><span class="description">Trainer</span></p>
                     </div>
                     <div class="image-box-6 box">
-                        <p><span class="trainer-name">Theresa Webb</span> <br><span class="description">Trainer</span></p>
+                        <p style="margin-top: 240px;"><span class="trainer-name">Theresa Webb</span> <br><span class="description">Trainer</span></p>
                     </div>
                 </div>
-            </div>
+            <!--</div> -->
         </section>
 
         <!--footer section-->
-        <section>
-            <div class="footer">
+        <section class="footer">
+            <div >
                 <div class="text-container">
                     <div class="about">
                         <p><span class="logo">Fitness</span> <br>
@@ -193,7 +207,10 @@
                         <a class="description" href="">App Design</a>
                     </div>
                 </div>
-                <div class="copyright"><p >All right reserved @Fitness 2024</p></div>
+                <div class="copyright">
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                     <p >All right reserved @Fitness 2024</p>
+                </div>
             </div>
             
         </section>

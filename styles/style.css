@@ -251,14 +251,15 @@ main{
     margin-bottom: 6.25rem;
 }
 .run-image{
-    /* max-height: 312px; */
-    /* max-width: 366px; */
-    width: 366px;
-    height: 312px;
-    /* object-position: 100px; */
+    /* max-height: 312px; 
+    max-width: 366px; */
+     width: 366px;
+    height: 312px; 
+    object-position: 100px;
     border-radius: 18px;
     background-image: url(../images/run.jpg);
     background-size:cover;
+    position: relative;
     background-position: center;
     object-fit: fill;
 }
@@ -282,6 +283,7 @@ main{
 .container{
     background: rgb(34, 34, 34);
     margin-bottom: 5.5rem;
+    min-height: 480px;
 }
 
 .content{
@@ -289,6 +291,59 @@ main{
     justify-content: space-between;
     max-width: 1060px;
     margin: 0 auto;
+    /* margin-top: 50px; */
+}
+
+table, th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5) ;
+    padding: 16px;
+    text-align: left;
+}
+th{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.calculator{
+    max-width: 580px;
+}
+
+.height{
+    grid-area: height;
+}
+.weight{
+    grid-area: weight;
+}
+.age{
+    grid-area: age;
+}
+.Sex{
+    grid-area: sex;
+}
+.activity{
+    grid-area: activity;
+}
+.input-fields{
+    display: grid;
+    gap: 12px;
+    grid-template-areas: 
+    "height     weight"
+    "age        sex"
+    "activity   activity"
+    ;
+    margin-bottom: 2rem;
+}
+.input-box{
+    padding: 12px 20px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 8px;
 }
 
 /* team section */
@@ -309,7 +364,8 @@ main{
     
 }
 .box p{
-    vertical-align: bottom;
+    text-align: start;
+
 }
 .team-image-container{
     border-radius: 18px;
@@ -409,7 +465,7 @@ main{
 /* foooter section */
 .footer{
     background-color:rgba(255, 255, 255, 0.1);
-    min-height: 490px;
+    min-height: 430px;
 }
 .logo{
     font-size: 4.5rem;
@@ -447,10 +503,80 @@ main{
 }
 
 .copyright{
+    max-width: 1060px;
+    margin: 0 auto;
     font-size: 20px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     margin-top: 50px;
     /* margin-bottom: 40px; */
+}
+
+.copyright p{
+    margin-top: 25px;
+}
+
+
+
+/* small devices */
+@media screen and ( max-width:576px){
+    .body{
+        margin: 0px;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .header{
+        min-height: 1345px;
+    }
+    .banner-image{
+        margin: 0 auto;
+    }
+    .badge-1{
+        margin-top: -10rem;
+        margin-left: 1rem;
+    }
+    
+    
+    .badge-2{
+    
+        margin-top: -10rem;
+    }
+    .btn{
+        display: flex;
+    }
+
+    .habit-images-container{
+        flex-direction: column;
+    }
+    .run{
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .bmi-title{
+        margin-left: 5%;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .calculator{
+        max-width: 350px;
+    }
+    .input-fields{
+        width: 100%;
+    }
+    .team-image-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        flex-direction: column;
+    }
+    .footer{
+        min-height: 990px;
+    }
 }
