@@ -18,10 +18,10 @@
     font-weight: 400;
 }
 /* Shared style */
-
+/* 
 body{
-    margin-bottom: 0;
-}
+    margin: 0;
+} */
 .hamburg{
     display: none;
 }
@@ -608,7 +608,25 @@ th{
     } */
      .input-fields{
         width: 80%;
-     }
+     } 
+    
+    /* /* .input-fields{
+        gap: 0px;
+    } */
+     /* .height{
+        width: 50%;
+    }
+    .weight{
+        grid-area: weight;
+        width: 50%;
+    }
+    .age{
+        grid-area: age;
+    }
+    .Sex{
+        grid-area: sex;
+    }  */
+
     .team-image-container{
         display: flex;
         flex-direction: column;
