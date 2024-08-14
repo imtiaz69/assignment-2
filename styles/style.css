@@ -250,14 +250,17 @@ main{
     padding: 0 40px;
     margin-bottom: 6.25rem;
 }
-.run-image img{
+.run-image{
     /* max-height: 312px; */
-    max-width: 366px;
-    /* width: 366px;
-    height: 312px; */
+    /* max-width: 366px; */
+    width: 366px;
+    height: 312px;
     /* object-position: 100px; */
     border-radius: 18px;
-    position: relative;
+    background-image: url(../images/run.jpg);
+    background-size:cover;
+    background-position: center;
+    object-fit: fill;
 }
 
 .run-text{
@@ -297,17 +300,157 @@ main{
 }
 
 .box{
-    max-height: 272px;
-    max-width: 326.67px;
+    height: 272px;
+    width:calc(100% - 80px )/3;
     border-radius: 18px;
     background-color: aqua;
+    text-align: start;
+    padding: 20px;
+    
+}
+.box p{
+    vertical-align: bottom;
 }
 .team-image-container{
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+    gap: 20px;
     padding: 20px;
+    margin-bottom: 5.5rem;
 }
 
+.trainer-name{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+.image-box-1{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer1.png);
+    background-blend-mode: overlay;
+    /* size: 100%; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    
+}
+
+.image-box-2{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer2.png);
+    background-blend-mode: overlay;
+    size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    
+}
+
+.image-box-3{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer3.png);
+    background-blend-mode: overlay;
+    size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    object-fit: fill;
+    
+}
+
+.image-box-4{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer4.png);
+    background-blend-mode: overlay;
+    size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: fill;
+    
+}
+
+.image-box-5{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer5.png);
+    background-blend-mode: overlay;
+    size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    
+}
+
+.image-box-6{
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/trainer6.png);
+    background-blend-mode: overlay;
+    size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    
+}
+
+/* foooter section */
+.footer{
+    background-color:rgba(255, 255, 255, 0.1);
+    min-height: 490px;
+}
+.logo{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    /* margin-top: 100px; */
+}
+
+.text-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 40px;
+}
+
+.get-started a{
+    font-size: 23px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.title2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.about{
+    max-width:443px ;
+}
+.get-started{
+    min-height: 200px;
+}
+
+.copyright{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 50px;
+    /* margin-bottom: 40px; */
+}
