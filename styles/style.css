@@ -18,10 +18,10 @@
     font-weight: 400;
 }
 /* Shared style */
-/* 
+
 body{
     margin: 0;
-} */
+}
 .hamburg{
     display: none;
 }
@@ -570,7 +570,9 @@ th{
         margin-top: -10rem;
         margin-left: 1rem;
     }
-    
+    .navbar{
+        padding: 10px;
+    }
     
     .badge-2{
     
@@ -642,6 +644,9 @@ th{
     }
     .hamburg{
         display: block;
+    }
+    .card{
+        padding: 10px;
     }
 
     .card-container{
